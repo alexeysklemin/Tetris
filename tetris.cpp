@@ -1,12 +1,9 @@
 #include <SFML/Graphics.hpp>
 #include <time.h>
 #include "figure.h"
+#include "GameField.h"
 using namespace sf;
 
-const int M = 20;
-const int N = 10;
-
-int field[M][N] = { 0 };
 
 
 
@@ -22,7 +19,9 @@ bool check()
 
 int main()
 {
+    GameField();
     srand(time(0));
+    figure();
 
     RenderWindow window(VideoMode(320, 480), "The Game!");
 
